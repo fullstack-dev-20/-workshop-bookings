@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Tailwind 4 borders default to currentColor; use a soft grey like 3 did. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-zinc-200, currentColor);
+  }
+}
